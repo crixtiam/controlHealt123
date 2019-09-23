@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/health_logo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+               <!-- <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/userId"
+                    android:layout_marginTop="0dp"
+                    android:hint="@string/txtUserID"-->
+
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/eUsernameLogin"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/txtUsername"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/ePasswordLogin"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/txtPassword"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/btn_submitLogin"
+                        android:background="@drawable/button_round"
+                        android:textColor="@color/txtBtnColorSubmit"
+                        android:text="@string/txtSubmit"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btn_NewControlLogin"
+                        android:background="@drawable/button_round"
+                        android:textColor="@color/txtBtnColorSubmit"
+                        android:text="@string/txtNewControl"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

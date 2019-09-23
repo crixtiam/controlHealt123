@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Control Kidney</string>
+    <string name="txtUserID">ID</string>
+    <string name="txtSubmit">SUBMIT</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtDni">Dni</string>
+    <string name="txtGender">Gender</string>
+    <string name="txtMale">Male</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtFemale">Female</string>
+    <string name="title_activity_menu_nav">menuNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="txtNewControl">NEW CONTROL</string>
+    <string name="txtAge">Age</string>
+    <string name="txtTall">Tall(cm)</string>
+    <string name="txtWeigth">Weigth(kg)</string>
+    <string name="txtPressure">Blood  Pressure</string>
+    <string name="txtSerineCreatine">Serine Creatinine</string>
+    <string name="txtUrineCreatinine">Urine  Creatinine</string>
+    <string name="txtAlbumin">Albumin</string>
+    <string name="txtGlomerularFiltration">Glomerular Filtration</string>
+    <string name="txtBtnDiagnosis">START DIAGNOSIS</string>
+
+
+</resources>

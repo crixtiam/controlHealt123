@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "912119728225",
+    "firebase_url": "https://control123-cdf1e.firebaseio.com",
+    "project_id": "control123-cdf1e",
+    "storage_bucket": "control123-cdf1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912119728225:android:4d3ad7743e8a16d76b0220",
+        "android_client_info": {
+          "package_name": "com.example.controlhealt123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912119728225-ot488fhk38hpj866fqtn4b40rlu4d50a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.controlhealt123",
+            "certificate_hash": "a974dba1e5cb6a0226b47af2c0159f970b80deaa"
+          }
+        },
+        {
+          "client_id": "912119728225-0sk8bvcngqb65i28rjfqd30ofnplec9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsOzAwreQOEiJ_qNx7uNkhxvBz3zYmtWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912119728225-0sk8bvcngqb65i28rjfqd30ofnplec9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

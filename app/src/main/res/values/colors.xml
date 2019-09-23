@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#03193C</color>
+    <color name="colorPrimaryDark">#080D30</color>
+    <color name="colorAccent">#F03C0E</color>
+    <color name="btnColorSubmit">#032372</color>
+    <color name="txtBtnColorSubmit">#697FB6</color>
+    <color name="btnColorNewControl">#032372</color>
+
+</resources>
