@@ -70,6 +70,6 @@ class loginActivity : AppCompatActivity() {
     }
 
     private fun action(){
-        startActivity(Intent(this,MainActivity::class.java))
+        startActivity(Intent(this,bottomNavActivity::class.java))
     }
 }
