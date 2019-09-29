@@ -73,7 +73,7 @@
 
                     <androidx.appcompat.widget.AppCompatCheckBox
                         android:text="@string/txtVerdurasCheckBox"
-                        android:layout_width="80dp"
+                        android:layout_width="90dp"
                         android:id="@+id/verdurasChecked"
                         android:layout_height="wrap_content"/>
 
@@ -167,16 +167,19 @@
 
                     <androidx.appcompat.widget.AppCompatCheckBox
                         android:text="@string/txtAceiteOlviaCheckBox"
+                        android:id="@+id/aceiteOlivaChecked"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"/>
 
                     <androidx.appcompat.widget.AppCompatCheckBox
                         android:text="@string/txtAceiteCacahuateCheckBox"
+                        android:id="@+id/aceiteCacahuateChecked"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"/>
 
                     <androidx.appcompat.widget.AppCompatCheckBox
                         android:text="@string/txtAceiteMaizCheckBox"
+                        android:id="@+id/aceiteMaizChecked"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"/>
 
@@ -199,12 +202,14 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtMantequillaCheckBox"
+                            android:id="@+id/mantequillaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtMantecaCerdoCheckBox"
-                            android:layout_width="110dp"
+                            android:id="@+id/mantecaCerdoChecked"
+                            android:layout_width="180dp"
                             android:layout_height="wrap_content"/>
 
 
@@ -216,10 +221,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
-
-
 
 
 
@@ -258,19 +259,22 @@
                     android:orientation="horizontal">
 
                     <androidx.appcompat.widget.AppCompatCheckBox
-                        android:layout_width="80dp"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"
+                        android:id="@+id/jamonChecked"
                         android:text="@string/txtJamonCheckBox"
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatCheckBox
                         android:text="@string/txtTocinoCheckBox"
-                        android:layout_width="80dp"
+                        android:id="@+id/tocinoChecked"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"/>
 
                     <androidx.appcompat.widget.AppCompatCheckBox
                         android:text="@string/txtAceitunasCheckBox"
-                        android:layout_width="80dp"
+                        android:id="@+id/aceitunasChecked"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"/>
 
 
@@ -293,12 +297,14 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtSalchichasCheckBox"
-                            android:layout_width="120dp"
+                            android:id="@+id/salchichasChecked"
+                            android:layout_width="160dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
-                            android:layout_width="120dp"
+                            android:layout_width="160dp"
                             android:layout_height="wrap_content"
+                            android:id="@+id/verdurasLataChecked"
                             android:text="@string/txtVerdurasLataCheckBox" />
 
 
@@ -319,17 +325,20 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtSopasLataCheckBox"
+                            android:id="@+id/sopaLataChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtComidasCongeladasCheckBox"
+                            android:id="@+id/comidaCongeladaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtPepinillosCheckBox"
+                            android:id="@+id/pepinilloChecked"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
@@ -382,19 +391,22 @@
                     android:orientation="horizontal">
 
                     <androidx.appcompat.widget.AppCompatCheckBox
-                        android:layout_width="100dp"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
+                        android:id="@+id/manzanaChecked"
                         android:text="@string/txtManzanaCheckBox"
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatCheckBox
                         android:text="@string/txtUvasCheckBox"
-                        android:layout_width="80dp"
+                        android:id="@+id/uvaChecked"
+                        android:layout_width="110dp"
                         android:layout_height="wrap_content"/>
 
                     <androidx.appcompat.widget.AppCompatCheckBox
                         android:text="@string/txtPinasCheckBox"
-                        android:layout_width="80dp"
+                        android:id="@+id/pinaChecked"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"/>
 
                 </LinearLayout>
@@ -417,11 +429,13 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtArandanosCheckBox"
-                            android:layout_width="110dp"
+                            android:id="@+id/arandanoChecked"
+                            android:layout_width="120dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
-                            android:layout_width="90dp"
+                            android:layout_width="110dp"
+                            android:id="@+id/coliflorChecked"
                             android:text="@string/txtColiflorCheckBox"
                             android:layout_height="wrap_content"/>
 
@@ -429,6 +443,7 @@
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:layout_width="90dp"
                             android:layout_height="wrap_content"
+                            android:id="@+id/calabazaChecked"
                             android:text="@string/txtCalabazaCheckBox" />
 
                     </LinearLayout>
@@ -448,17 +463,20 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtCebollasCheckBox"
+                            android:id="@+id/cebollaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtPimientosCheckBox"
+                            android:id="@+id/pimientoChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtRabanosCheckBox"
+                            android:id="@+id/rabanoChecked"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
@@ -479,17 +497,20 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtLechugasCheckBox"
+                            android:id="@+id/lechugaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtPitallaCheckBox"
+                            android:id="@+id/pitallaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtTorillasCheckBox"
+                            android:id="@+id/tortillaChecked"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
@@ -510,17 +531,20 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtPanesCheckBox"
+                            android:id="@+id/panBlancoChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtCarneResCheckBox"
+                            android:id="@+id/carneResChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtArrozCheckBox"
+                            android:id="@+id/arrozBlancoChecked"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
@@ -543,17 +567,20 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtAguacateCheckBox"
+                            android:id="@+id/aguacateChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtBananoCheckBox"
+                            android:id="@+id/bananoChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtMelonCheckBox"
+                            android:id="@+id/melonChecked"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
@@ -575,17 +602,20 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtNaranjaCheckBox"
+                            android:id="@+id/naranjaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtCiruelaCheckBox"
+                            android:id="@+id/ciruelaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtPasasCheckBox"
+                            android:id="@+id/pasasChecked"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
@@ -607,22 +637,24 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtAlcachofaCheckBox"
+                            android:id="@+id/AlcachofaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtCaPlatanoCheckBox"
+                            android:id="@+id/platanoChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtEspinacaCheckBox"
+                            android:id="@+id/espinacaChecked"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
-
 
 
 
@@ -640,17 +672,20 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtPapaCheckBox"
+                            android:id="@+id/papaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtTomateCheckBox"
+                            android:id="@+id/tomateChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtProductoSalvadoCheckBox"
+                            android:id="@+id/productoSalvado"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
@@ -672,17 +707,20 @@
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtCheGranolackBox"
+                            android:id="@+id/granolaChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtFrijolesCheckBox"
+                            android:id="@+id/frijoChecked"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"/>
 
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:text="@string/txtArrozIntegralCheckBox"
+                            android:id="@+id/arrozIntegralChecked"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
