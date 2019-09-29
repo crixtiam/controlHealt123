@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NutritionFragment">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/titlefood" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="106dp"
+                android:layout_height="64dp"
+                android:src="@drawable/proteinttitle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/panChecked"
+                        android:text="@string/txtPanCheckBox"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtFrutasCheckBox"
+                        android:layout_width="80dp"
+                        android:id="@+id/frutasChecked"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtVerdurasCheckBox"
+                        android:layout_width="80dp"
+                        android:id="@+id/verdurasChecked"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pastaChecked"
+                        android:text="@string/txtPastaCheckBox" />
+
+
+
+                </LinearLayout>
+
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:padding="5dp"
+               android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtArrozCheckBox"
+                        android:id="@+id/arrozChecked"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtCarneRojaCheckBox"
+                        android:id="@+id/carneRojaChecked"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtPolloCheckBox"
+                        android:id="@+id/polloChecked"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtPescadoCheckBox"
+                        android:id="@+id/pescadoChecked"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="106dp"
+                android:layout_height="64dp"
+                android:src="@drawable/grasastitle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtAceiteOlviaCheckBox"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtAceiteCacahuateCheckBox"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtAceiteMaizCheckBox"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtMantequillaCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtMantecaCerdoCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="106dp"
+                android:layout_height="64dp"
+                android:src="@drawable/sodiotitle" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtJamonCheckBox"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtTocinoCheckBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtAceitunasCheckBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtSalchichasCheckBox"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtVerdurasLataCheckBox" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtSopasLataCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtComidasCongeladasCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtPepinillosCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="106dp"
+                android:layout_height="64dp"
+                android:src="@drawable/potasiontitle" />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtManzanaCheckBox"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtUvasCheckBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtPinasCheckBox"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtArandanosCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_width="90dp"
+                            android:text="@string/txtColiflorCheckBox"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtCalabazaCheckBox" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtCebollasCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtPimientosCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtRabanosCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtLechugasCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtPitallaCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtTorillasCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtPanesCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtCarneResCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtArrozCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtAguacateCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtBananoCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtMelonCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtNaranjaCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtCiruelaCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtPasasCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtAlcachofaCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtCaPlatanoCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtEspinacaCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtPapaCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtTomateCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtProductoSalvadoCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtCheGranolackBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtFrijolesCheckBox"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:text="@string/txtArrozIntegralCheckBox"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="106dp"
+                android:layout_height="64dp"
+                android:src="@drawable/fosforotitle" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtPanItalianoCheckBox"
+                        android:id="@+id/panItalianoChecked"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtMaizCheckBox"
+                        android:id="@+id/maizChecked"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtCerealArrozCheckBox"
+                        android:id="@+id/cerealArrozChecked"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtCremaTrigoCheckBox"
+                        android:id="@+id/cremaTrigoChecked"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtPalomitasCheckBox"
+                        android:id="@+id/palomitasChecked"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtGaseosaClaraCheckBox"
+                        android:id="@+id/gaseosaClaraChecked"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtPanGranoEnteroCheckBox"
+                        android:id="@+id/panEnteroChecked"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtCerealSalvadoCheckBox"
+                        android:id="@+id/cerealSalvadoChecked"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtAvenaCheckBox"
+                        android:id="@+id/avenaChecked"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtFrutasSecasCheckBox"
+                        android:id="@+id/FrutaSecasChecked"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtSemillaGirasolCheckBox"
+                        android:id="@+id/SemillaGirasolChecked"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:text="@string/txtGaseosaOscuraCheckBox"
+                        android:id="@+id/GaseosaOscuraChecked"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_DietNutrition"
+                    android:text="UPDATE DIET NUTRITION"/>
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

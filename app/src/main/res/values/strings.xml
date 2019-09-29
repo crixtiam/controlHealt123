@@ -26,8 +26,87 @@
     <string name="txtBtnDiagnosis">START DIAGNOSIS</string>
     <string name="title_activity_bottom_nav_">Bottom_nav_Activity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="txtPanCheckBox">Pan</string>
+    <string name="txtFrutasCheckBox">Frutas</string>
+    <string name="txtVerdurasCheckBox">Verduras</string>
+    <string name="txtPastaCheckBox">Pasta</string>
+    <string name="txtArrozCheckBox">Arroz</string>
+    <string name="txtCarneRojaCheckBox">Carne Roja</string>
+    <string name="txtPolloCheckBox">Pollo</string>
+    <string name="txtPescadoCheckBox">Pescado</string>
+
+
+    <string name="txtAceiteOlviaCheckBox">Aceite de Oliva</string>
+    <string name="txtAceiteCacahuateCheckBox">Aceite de Cacahuate</string>
+    <string name="txtAceiteMaizCheckBox">Aceite de Maiz</string>
+    <string name="txtMantequillaCheckBox">Mantequilla</string>
+    <string name="txtMantecaCerdoCheckBox">Manteca de Cerdo</string>
+
+
+
+    <string name="txtJamonCheckBox">Jamon</string>
+    <string name="txtTocinoCheckBox">Tocino</string>
+    <string name="txtSalchichasCheckBox">Salchichas/Chorizo</string>
+    <string name="txtVerdurasLataCheckBox">Verduras en Lata</string>
+    <string name="txtSopasLataCheckBox">Sopas Enlatadas</string>
+    <string name="txtComidasCongeladasCheckBox">Comidas Congeladas</string>
+    <string name="txtAceitunasCheckBox">Aceitunas</string>
+    <string name="txtPepinillosCheckBox">Pepinillos</string>
+    <string name="txtSalsaSoyaCheckBox">Salsa de soya</string>
+    <string name="txtBarbacoaCheckBox">Barbacoa</string>
+    <string name="txtSalsaTomateCheckBox">Salsa de tomate</string>
+
+
+
+    <string name="txtManzanaCheckBox">Manzanas</string>
+    <string name="txtUvasCheckBox">Uvas</string>
+    <string name="txtFresasCheckBox">Fresas</string>
+    <string name="txtPinasCheckBox">Piñas</string>
+    <string name="txtArandanosCheckBox">Arandanos</string>
+    <string name="txtColiflorCheckBox">Coliflor</string>
+    <string name="txtCebollasCheckBox">Cebollas</string>
+    <string name="txtPimientosCheckBox">Pimientos</string>
+    <string name="txtRabanosCheckBox">Rabanos</string>
+    <string name="txtCalabazaCheckBox">Calabaza</string>
+    <string name="txtLechugasCheckBox">Lechuga</string>
+    <string name="txtPitallaCheckBox">Pitalla</string>
+    <string name="txtTorillasCheckBox">Tortillas</string>
+    <string name="txtPanesCheckBox">Panes Blancos</string>
+    <string name="txtCarneResCheckBox">Carne de res</string>
+    <string name="txtAguacateCheckBox">Aguacate</string>
+    <string name="txtBananoCheckBox">Bananos</string>
+    <string name="txtMelonCheckBox">Melones</string>
+    <string name="txtNaranjaCheckBox">Naranjas</string>
+    <string name="txtCiruelaCheckBox">Ciruelas</string>
+    <string name="txtPasasCheckBox">Pasas</string>
+    <string name="txtAlcachofaCheckBox">Alcachofas</string>
+    <string name="txtCaPlatanoCheckBox">Platanos</string>
+    <string name="txtEspinacaCheckBox">Espinaca</string>
+    <string name="txtPapaCheckBox">Papas</string>
+    <string name="txtTomateCheckBox">Tomates</string>
+    <string name="txtProductoSalvadoCheckBox">Productos de salvado</string>
+    <string name="txtCheGranolackBox">Granola</string>
+    <string name="txtFrijolesCheckBox">Frijoles</string>
+
+
+
+    <string name="txtPanItalianoCheckBox">Pan Italiano o de Masa Fermentada</string>
+    <string name="txtMaizCheckBox">Maiz</string>
+    <string name="txtCerealCheckBox">Cereales de Arroz</string>
+    <string name="txtCremaTrigoCheckBox">Crema de trigo</string>
+    <string name="txtPalomitasCheckBox">Palomitas de Maiz  sin sal</string>
+    <string name="txtGaseosaClaraCheckBox">Gaseosas de color claro o limonada</string>
+    <string name="txtPanGranoEnteroCheckBox">Pan de grano entero</string>
+    <string name="txtCerealSalvadoCheckBox">Cereal de salvado</string>
+    <string name="txtAvenaCheckBox">Avena</string>
+    <string name="txtFrutasSecasCheckBox">Frutas Secas</string>
+    <string name="txtSemillaGirasolCheckBox">Semillas de Girasol</string>
+    <string name="txtGaseosaOscuraCheckBox">Gaseosas de color oscuro</string>
+    <string name="txtArrozIntegralCheckBox">Arroz Integral</string>
+    <string name="txtCerealArrozCheckBox">Cereal de Arroz</string>
 
 
 </resources>

@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        database=  FirebaseDatabase.getInstance()
+        /*database=  FirebaseDatabase.getInstance()
         dbReference = database.reference.child("User")
         auth = FirebaseAuth.getInstance()
         var user = auth.currentUser
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         {
             Toast.makeText(this,"Authentication Failed",Toast.LENGTH_LONG).show()
         }
-
+*/
 
 
 

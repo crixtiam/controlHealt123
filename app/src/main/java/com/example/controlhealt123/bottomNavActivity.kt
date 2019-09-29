@@ -29,7 +29,8 @@ class bottomNavActivity : AppCompatActivity() {
             }
 
             R.id.navigation_notifications -> {
-
+                val NutritionFragment = NutritionFragment()
+                transaction.replace(R.id.contenedor,NutritionFragment).commit()
                 return@OnNavigationItemSelectedListener true
             }
 

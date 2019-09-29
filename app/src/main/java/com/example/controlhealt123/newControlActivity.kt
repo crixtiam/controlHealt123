@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ProgressBar
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
@@ -20,6 +17,7 @@ class newControlActivity : AppCompatActivity() {
     private lateinit var txtEmail:EditText
     private lateinit var txtPassword:EditText
     private lateinit var txtDni:EditText
+  //  private lateinit var radioButtonGroup: RadioGroup
     private lateinit var btnNewControl:Button
 
     private lateinit var progressBar: ProgressBar
@@ -30,6 +28,8 @@ class newControlActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_control)
+
+    //    radioButtonGroup = findViewById(R.id.radioGroupGender)
 
         txtName = findViewById(R.id.eUsername)
         txtEmail = findViewById(R.id.eEmail)
@@ -47,6 +47,7 @@ class newControlActivity : AppCompatActivity() {
 
         btnNewControl.setOnClickListener{
             createNewControl()
+
         }
 
 
@@ -60,6 +61,18 @@ class newControlActivity : AppCompatActivity() {
         val email = txtEmail.text.toString()
         val password = txtPassword.text.toString()
         val cedula =  txtDni.text.toString()
+       // var gender = ""
+
+        /*radioButtonGroup.setOnCheckedChangeListener{
+            group,checkedId->
+
+
+            if(R.id.radioButtonMale == checkedId)
+                gender = "Male"
+            else
+                gender = "Female"
+
+        }*/
 
         if (!TextUtils.isEmpty(name)&&!TextUtils.isEmpty(email)&&!TextUtils.isEmpty(password)&&!TextUtils.isEmpty(cedula)){
 
@@ -77,6 +90,7 @@ class newControlActivity : AppCompatActivity() {
                         val userBD = dbReference.child(user!!.uid)
                         userBD.child("Name").setValue(name)
                         userBD.child("Cedula").setValue(cedula)
+                       // userBD.child("Gender").setValue(gender)
                         action()
                         //behavoir
                         finish()
