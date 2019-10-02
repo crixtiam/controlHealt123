@@ -1,15 +1,14 @@
 package com.example.controlhealt123
 
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -18,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.view.*
 
 class mainFragmentActivity : Fragment() {
 
+    var interfaz : comunicator?  = null
 
     private lateinit var txtAge: EditText
     private lateinit var txtTall: EditText
@@ -27,6 +27,9 @@ class mainFragmentActivity : Fragment() {
     private lateinit var txtUrineCreatinine: EditText
     private lateinit var txtAlbumin: EditText
     private lateinit var txtGlomerularFiltration: EditText
+
+    private lateinit var radioButtonGroup: RadioGroup
+    private lateinit var radio : RadioButton
 
     private lateinit var btnDiagnosis: Button
 
@@ -56,6 +59,11 @@ class mainFragmentActivity : Fragment() {
         txtAlbumin = root.findViewById(R.id.eAlbuminMain)
         txtGlomerularFiltration = root.findViewById(R.id.eGlomerularFiltration)
 
+        radioButtonGroup =root.findViewById(R.id.radioGroupGender)
+
+          //var idRadioGroup = radioButtonGroup.checkedRadioButtonId
+
+
         btnDiagnosis = root.findViewById(R.id.btnDiagnostisisMain)
 
 
@@ -72,8 +80,21 @@ class mainFragmentActivity : Fragment() {
                 var Albumin = txtAlbumin.text.toString()
                 var glomerularFiltration= txtGlomerularFiltration.text.toString()
 
+                var idRadioGroup = radioButtonGroup.checkedRadioButtonId
+
+                if (idRadioGroup!=-1){
+                    radio = root.findViewById(idRadioGroup)
+                    Toast.makeText(context,"on click ${radio.text}",Toast.LENGTH_LONG).show()
+                }
+
+                else
+                {
+                    Toast.makeText(context,"on click no selected",Toast.LENGTH_LONG).show()
+                }
+
 
                 val userBD = dbReference.child(user.uid)
+                userBD.child("Gender").setValue(radio.text.toString())
 
                 val personalDataBD = userBD.child("PersonalData")
                 personalDataBD.child("Age").setValue(Age)
@@ -87,6 +108,8 @@ class mainFragmentActivity : Fragment() {
 
 
 
+
+
                 root.eAgeMain.text.clear()
                 root.eTallMain.text.clear()
                 root.eWeigthMain.text.clear()
@@ -95,6 +118,171 @@ class mainFragmentActivity : Fragment() {
                 root.eUrineCreatinineMain.text.clear()
                 root.eAlbuminMain.text.clear()
                 root.eGlomerularFiltration.text.clear()
+
+                when(radio.text.toString()){
+                    "Female"->{
+                        if (Age>0.toString()&&Age<= 0.5.toString()){
+                            if (Tall==60.toString()){
+                                if (Weigth==6.toString()){
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+
+                                }
+                            }
+                        }
+
+                        if (Age>0.6.toString()&&Age<= 1.toString()){
+                            if (Tall==71.toString()){
+                                if (Weigth==9.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+
+                        if (Age>1.toString()&&Age<= 3.toString()){
+                            if (Tall==90.toString()){
+                                if (Weigth==13.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+
+                        if (Age>4.toString()&&Age<= 6.toString()){
+                            if (Tall==112.toString()){
+                                if (Weigth==20.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+                        if (Age>7.toString()&&Age<= 10.toString()){
+                            if (Tall==132.toString()){
+                                if (Weigth==28.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+                        if (Age>11.toString()&&Age<= 14.toString()){
+                            if (Tall==157.toString()){
+                                if (Weigth==46.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+
+                        if (Age>15.toString()&&Age<= 18.toString()){
+                            if (Tall==163.toString()){
+                                if (Weigth==55.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+                        if (Age>19.toString()&&Age<= 24.toString()){
+                            if (Tall==164.toString()){
+                                if (Weigth==58.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+
+
+                    }
+
+                    "Male"->{
+
+                        if (Age>0.toString()&&Age<= 0.5.toString()){
+                            if (Tall==60.toString()){
+                                if (Weigth==6.toString()){
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+
+                                }
+                            }
+                        }
+
+                        if (Age>0.6.toString()&&Age<= 1.toString()){
+                            if (Tall==71.toString()){
+                                if (Weigth==9.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+
+                        if (Age>1.toString()&&Age<= 3.toString()){
+                            if (Tall==90.toString()){
+                                if (Weigth==13.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+
+                        if (Age>4.toString()&&Age<= 6.toString()){
+                            if (Tall==112.toString()){
+                                if (Weigth==20.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+                        if (Age>7.toString()&&Age<= 10.toString()){
+                            if (Tall==132.toString()){
+                                if (Weigth==28.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+                        if (Age>11.toString()&&Age<= 14.toString()){
+                            if (Tall==157.toString()){
+                                if (Weigth==45.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+
+                        if (Age>15.toString()&&Age<= 18.toString()){
+                            if (Tall==176.toString()){
+                                if (Weigth==66.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+                        if (Age>19.toString()&&Age<= 24.toString()){
+                            if (Tall==177.toString()){
+                                if (Weigth==72.toString()){
+                                    userBD.child("Rango").setValue("Aceptado peso-talla")
+                                    Toast.makeText(context,"Rango aceptado",Toast.LENGTH_LONG).show()
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
 
                 when(glomerularFiltration.toFloat()){
                     in 90.0..120.0 -> {
@@ -141,6 +329,14 @@ class mainFragmentActivity : Fragment() {
                 }
 
 
+
+
+
+
+
+
+
+
             }
 
 
@@ -160,6 +356,15 @@ class mainFragmentActivity : Fragment() {
      fun diagnosisEtapa(): String {
         var etapa = "da"
         return etapa
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        try{
+            interfaz = context as comunicator
+        }catch (e:ClassCastException){
+            Log.d("exception",e.toString())
+        }
     }
 
 

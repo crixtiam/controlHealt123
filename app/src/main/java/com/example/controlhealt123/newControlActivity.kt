@@ -17,7 +17,8 @@ class newControlActivity : AppCompatActivity() {
     private lateinit var txtEmail:EditText
     private lateinit var txtPassword:EditText
     private lateinit var txtDni:EditText
-  //  private lateinit var radioButtonGroup: RadioGroup
+    private lateinit var radioButtonGroup: RadioGroup
+    private lateinit var radio :RadioButton
     private lateinit var btnNewControl:Button
 
     private lateinit var progressBar: ProgressBar
@@ -29,7 +30,7 @@ class newControlActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_control)
 
-    //    radioButtonGroup = findViewById(R.id.radioGroupGender)
+        radioButtonGroup = findViewById(R.id.radioGroupGender)
 
         txtName = findViewById(R.id.eUsername)
         txtEmail = findViewById(R.id.eEmail)
@@ -61,18 +62,19 @@ class newControlActivity : AppCompatActivity() {
         val email = txtEmail.text.toString()
         val password = txtPassword.text.toString()
         val cedula =  txtDni.text.toString()
-       // var gender = ""
 
-        /*radioButtonGroup.setOnCheckedChangeListener{
-            group,checkedId->
+        var idRadioGroup = radioButtonGroup.checkedRadioButtonId
 
+        if (idRadioGroup!=-1){
+            radio = findViewById(idRadioGroup)
+            Toast.makeText(this,"on click ${radio.text}",Toast.LENGTH_LONG).show()
+        }
 
-            if(R.id.radioButtonMale == checkedId)
-                gender = "Male"
-            else
-                gender = "Female"
+        else
+        {
+            Toast.makeText(this,"on click no selected",Toast.LENGTH_LONG).show()
+        }
 
-        }*/
 
         if (!TextUtils.isEmpty(name)&&!TextUtils.isEmpty(email)&&!TextUtils.isEmpty(password)&&!TextUtils.isEmpty(cedula)){
 
@@ -90,7 +92,7 @@ class newControlActivity : AppCompatActivity() {
                         val userBD = dbReference.child(user!!.uid)
                         userBD.child("Name").setValue(name)
                         userBD.child("Cedula").setValue(cedula)
-                       // userBD.child("Gender").setValue(gender)
+                     //   userBD.child("Gender").setValue(radio.text.toString())
                         action()
                         //behavoir
                         finish()

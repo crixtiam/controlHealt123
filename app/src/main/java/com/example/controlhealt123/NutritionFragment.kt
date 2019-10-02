@@ -1,7 +1,9 @@
 package com.example.controlhealt123
 
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +20,9 @@ import kotlinx.android.synthetic.main.fragment_nutrition.*
  * A simple [Fragment] subclass.
  */
 class NutritionFragment : Fragment() {
+
+    var interfaz : comunicator?  = null
+
 
     private lateinit var dbReference: DatabaseReference
     private lateinit var database: FirebaseDatabase
@@ -1116,7 +1121,14 @@ class NutritionFragment : Fragment() {
 
 
 
-
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        try{
+            interfaz = context as comunicator
+        }catch (e:ClassCastException){
+            Log.d("exception",e.toString())
+        }
+    }
 
 
 } //end fragment

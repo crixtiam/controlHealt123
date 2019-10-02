@@ -46,7 +46,6 @@
     <string name="txtMantecaCerdoCheckBox">Manteca de Cerdo</string>
 
 
-
     <string name="txtJamonCheckBox">Jamon</string>
     <string name="txtTocinoCheckBox">Tocino</string>
     <string name="txtSalchichasCheckBox">Salchichas/Chorizo</string>
@@ -58,7 +57,6 @@
     <string name="txtSalsaSoyaCheckBox">Salsa de soya</string>
     <string name="txtBarbacoaCheckBox">Barbacoa</string>
     <string name="txtSalsaTomateCheckBox">Salsa de tomate</string>
-
 
 
     <string name="txtManzanaCheckBox">Manzanas</string>
@@ -90,7 +88,6 @@
     <string name="txtProductoSalvadoCheckBox">Productos de salvado</string>
     <string name="txtCheGranolackBox">Granola</string>
     <string name="txtFrijolesCheckBox">Frijoles</string>
-
 
 
     <string name="txtPanItalianoCheckBox">Pan Italiano o de Masa Fermentada</string>
