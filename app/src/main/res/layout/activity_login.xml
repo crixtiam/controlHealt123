@@ -75,7 +75,7 @@
                         android:id="@+id/btn_submitLogin"
                         android:background="@drawable/button_round"
                         android:textColor="@color/txtBtnColorSubmit"
-                        android:text="@string/txtSubmit"/>
+                        android:text="@string/txtSubmitLog"/>
 
 
                 </LinearLayout>

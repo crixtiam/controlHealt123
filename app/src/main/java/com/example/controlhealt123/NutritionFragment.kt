@@ -208,6 +208,8 @@ class NutritionFragment : Fragment() {
             potassiumFood()
             phosphorusFood()
 
+            Toast.makeText(this.context,"Datos enviados a la base de datos",Toast.LENGTH_LONG).show()
+
         }
 
 

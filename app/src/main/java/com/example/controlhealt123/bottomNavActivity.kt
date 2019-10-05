@@ -2,25 +2,16 @@ package com.example.controlhealt123
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ListView
-import com.example.controlhealt123.Adapters.DiagnosisCardAdapter
-import com.example.controlhealt123.DataModel.ModelPersonalData
-import com.example.controlhealt123.DataModel.PersonalData
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import java.util.*
-
-class bottomNavActivity : AppCompatActivity() {
 
 
-    private lateinit var dbReference: DatabaseReference
-    private lateinit var database: FirebaseDatabase
-    private lateinit var  auth: FirebaseAuth
+class bottomNavActivity : AppCompatActivity(),comunicator {
 
-  //  private var mDiagnosisListAdapter : DiagnosisCardAdapter?=null
+    var userData : MutableList<UserData> = ArrayList()
 
+    override fun changeData(name: String, etapa: String) {
+
+    }
 
 
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -31,6 +22,9 @@ class bottomNavActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_home -> {
                 val mainFragment = mainFragmentActivity()
+                val bundle = Bundle()
+                bundle.putParcelableArrayList("send",ArrayList<UserData>(userData))
+                mainFragment.arguments=bundle
 
                 transaction.replace(R.id.contenedor,mainFragment).commit()
 
@@ -40,14 +34,9 @@ class bottomNavActivity : AppCompatActivity() {
             R.id.navigation_dashboard -> {
 
                 val clinicalDiagnosis = clinicalDiagnosisFragment()
-
-              //  ModelPersonalData.addObserver(this)
-              //  val dataList : ListView = findViewById(R.id.data_list)
-        //observar
-                //val data : ArrayList<PersonalData> = ArrayList()
-            //mDiagnosisListAdapter= DiagnosisCardAdapter(this,R.layout.data_card_item,data)
-
-             // dataList.adapter = mDiagnosisListAdapter
+                val bundle = Bundle()
+                bundle.putParcelableArrayList("send", ArrayList<UserData>(userData))
+                clinicalDiagnosis.arguments = bundle
 
                 transaction.replace(R.id.contenedor,clinicalDiagnosis).commit()
 
@@ -56,6 +45,9 @@ class bottomNavActivity : AppCompatActivity() {
 
             R.id.navigation_notifications -> {
                 val NutritionFragment = NutritionFragment()
+                /*val bundle = Bundle()
+                bundle.putParcelableArrayList("send", ArrayList<UserData>(userData))
+                NutritionFragment.arguments = bundle*/
                 transaction.replace(R.id.contenedor,NutritionFragment).commit()
                 return@OnNavigationItemSelectedListener true
             }
@@ -67,29 +59,6 @@ class bottomNavActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_nav)
 
-        database= FirebaseDatabase.getInstance()
-        auth = FirebaseAuth.getInstance()
-        dbReference= database.getReference()
-
-
-        var user = auth.currentUser
-
-        /*ModelPersonalData.addObserver(this)
-        val dataList : ListView = findViewById(R.id.data_list)
-        //observar
-        val data : ArrayList<PersonalData> = ArrayList()
-            mDiagnosisListAdapter= DiagnosisCardAdapter(this,R.layout.data_card_item,data)
-
-           dataList.adapter = mDiagnosisListAdapter
-*/
-
-
-
-        ///otraa actividad
-
-
-
-
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
@@ -98,38 +67,21 @@ class bottomNavActivity : AppCompatActivity() {
 
         val mainFragent = mainFragmentActivity()
 
+
         transaction.replace(R.id.contenedor,mainFragent).commit()
     }
- /*   override fun update(p0: Observable?, p1: Any?) {
-        mDiagnosisListAdapter?.clear()
-        val data = ModelPersonalData.getData()
-        if (data!=null){
-            mDiagnosisListAdapter?.clear()
-            mDiagnosisListAdapter?.addAll(data)
-            mDiagnosisListAdapter?.notifyDataSetChanged()
-        }
+
+    override  fun addDataUser(Age:String,Tall:String,Weigth:String,Albumina:String){
+        var userData = UserData( Age,Tall,Weigth,Albumina)
+
+        val manager = supportFragmentManager
+        val transaction = manager.beginTransaction()
+        val fragmentAddNotify = mainFragmentActivity()
+        val bundle = Bundle()
 
 
-
-
+        fragmentAddNotify.arguments = bundle
+        transaction.replace(R.id.contenedor,fragmentAddNotify).commit()
     }
-
-    override fun onResume() {
-        super.onResume()
-        ModelPersonalData.addObserver(this)
-    }
-
-    override fun onPause() {
-        super.onPause()
-
-        ModelPersonalData.addObserver(this)
-    }
-
-    override fun onStop() {
-        super.onStop()
-
-        ModelPersonalData.addObserver(this)
-    }
-*/
 
 }

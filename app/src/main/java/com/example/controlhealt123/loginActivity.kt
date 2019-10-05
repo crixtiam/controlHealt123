@@ -35,8 +35,6 @@ class loginActivity : AppCompatActivity() {
 
         btn_submit.setOnClickListener{
             loginStart()
-           // startActivity(Intent(this,MainActivity::class.java))
-
         }
 
         btn_newControl.setOnClickListener {

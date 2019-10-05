@@ -2,28 +2,28 @@
 
     <string name="app_name">Control Kidney</string>
     <string name="txtUserID">ID</string>
-    <string name="txtSubmit">SUBMIT</string>
-    <string name="txtUsername">Username</string>
-    <string name="txtDni">Dni</string>
-    <string name="txtGender">Gender</string>
-    <string name="txtMale">Male</string>
-    <string name="txtPassword">Password</string>
+    <string name="txtSubmit">REGISTRO</string>
+    <string name="txtUsername">Usuario</string>
+    <string name="txtDni">Cedula</string>
+    <string name="txtGender">Genero</string>
+    <string name="txtMale">Niño</string>
+    <string name="txtPassword">Contraseña</string>
     <string name="txtEmail">Email</string>
-    <string name="txtFemale">Female</string>
+    <string name="txtFemale">Niña</string>
     <string name="title_activity_menu_nav">menuNavActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="txtNewControl">NEW CONTROL</string>
-    <string name="txtAge">Age</string>
-    <string name="txtTall">Tall(cm)</string>
-    <string name="txtWeigth">Weigth(kg)</string>
-    <string name="txtPressure">Blood  Pressure</string>
-    <string name="txtSerineCreatine">Serine Creatinine</string>
-    <string name="txtUrineCreatinine">Urine  Creatinine</string>
-    <string name="txtAlbumin">Albumin</string>
-    <string name="txtGlomerularFiltration">Glomerular Filtration</string>
-    <string name="txtBtnDiagnosis">START DIAGNOSIS</string>
+    <string name="txtNewControl">NUEVO CONTROL</string>
+    <string name="txtAge">Edad</string>
+    <string name="txtTall">Altura(cm)</string>
+    <string name="txtWeigth">Peso(kg)</string>
+    <string name="txtPressure">Presion</string>
+    <string name="txtSerineCreatine">Creatinina serica (mg/dl)</string>
+    <string name="txtUrineCreatinine">Creatinina en orina</string>
+    <string name="txtAlbumin">Albumina(mg/g)</string>
+    <string name="txtGlomerularFiltration">Filtracion Glomerular (ml/min)</string>
+    <string name="txtBtnDiagnosis">INICIAR DIAGNOSTICO</string>
     <string name="title_activity_bottom_nav_">Bottom_nav_Activity</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -104,6 +104,15 @@
     <string name="txtGaseosaOscuraCheckBox">Gaseosas de color oscuro</string>
     <string name="txtArrozIntegralCheckBox">Arroz Integral</string>
     <string name="txtCerealArrozCheckBox">Cereal de Arroz</string>
+    <string name="txtSubmitLog">INICIAR SESION</string>
+    <string name="Alimentacion">Alimentos</string>
+    <string name="Monitoreo">Monitoreo</string>
+    <string name="Edad">Edad</string>
+    <string name="talla">Talla</string>
+    <string name="ePeso">Peso</string>
+    <string name="eAlbumina">Albumina</string>
+    <string name="cantidadItem">Filtracion_Glomerular</string>
+    <string name="filtracionGlomerular">Filtracion Glomerular</string>
 
 
 </resources>

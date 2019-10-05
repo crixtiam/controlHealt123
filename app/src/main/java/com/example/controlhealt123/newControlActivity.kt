@@ -17,8 +17,6 @@ class newControlActivity : AppCompatActivity() {
     private lateinit var txtEmail:EditText
     private lateinit var txtPassword:EditText
     private lateinit var txtDni:EditText
-    private lateinit var radioButtonGroup: RadioGroup
-    private lateinit var radio :RadioButton
     private lateinit var btnNewControl:Button
 
     private lateinit var progressBar: ProgressBar
@@ -30,7 +28,6 @@ class newControlActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_control)
 
-        radioButtonGroup = findViewById(R.id.radioGroupGender)
 
         txtName = findViewById(R.id.eUsername)
         txtEmail = findViewById(R.id.eEmail)
@@ -40,7 +37,6 @@ class newControlActivity : AppCompatActivity() {
 
         progressBar=findViewById(R.id.progressBar)
 
-        //progressBar= ProgressBar(this)
         database= FirebaseDatabase.getInstance()
         auth = FirebaseAuth.getInstance()
 
@@ -63,17 +59,7 @@ class newControlActivity : AppCompatActivity() {
         val password = txtPassword.text.toString()
         val cedula =  txtDni.text.toString()
 
-        var idRadioGroup = radioButtonGroup.checkedRadioButtonId
 
-        if (idRadioGroup!=-1){
-            radio = findViewById(idRadioGroup)
-            Toast.makeText(this,"on click ${radio.text}",Toast.LENGTH_LONG).show()
-        }
-
-        else
-        {
-            Toast.makeText(this,"on click no selected",Toast.LENGTH_LONG).show()
-        }
 
 
         if (!TextUtils.isEmpty(name)&&!TextUtils.isEmpty(email)&&!TextUtils.isEmpty(password)&&!TextUtils.isEmpty(cedula)){
@@ -92,13 +78,16 @@ class newControlActivity : AppCompatActivity() {
                         val userBD = dbReference.child(user!!.uid)
                         userBD.child("Name").setValue(name)
                         userBD.child("Cedula").setValue(cedula)
-                     //   userBD.child("Gender").setValue(radio.text.toString())
+                        userBD.child("Email").setValue(email)
                         action()
-                        //behavoir
                         finish()
 
                     }
                 }
+        }
+
+        else{
+            Toast.makeText(this,"Campos Vacios",Toast.LENGTH_LONG).show()
         }
     }
 
